@@ -58,7 +58,7 @@ button {
   margin-bottom: 128px;
 }
 
-.hero .info {
+.hero .content {
   display: flex;
   flex: 1;
   justify-content: space-between;
@@ -87,19 +87,23 @@ h2 {
 .body {
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
 }
 
 .info {
+  flex-basis: 100%;
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
-  /*gap: 60px;
-  margin-bottom: 60px;*/
+  gap: 60px;
+  margin: 0 auto 60px;
+  padding: 0 120px;
 }
 
 .infobox {
-  width: 125px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,8 +113,8 @@ h2 {
 
 .image-border {
   border: solid 3px #3882F6;
-  width: 125px;
-  height: 125px;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -120,7 +124,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding: 60px ;
+  padding: 60px 210px;
+  margin: 0 auto;
 }
 
 .text {
@@ -128,4 +133,31 @@ h2 {
   font-weight: 200;
   font-style: italic;
   color: #1F2937;
+}
+
+h3 {
+  margin: 0;
+}
+
+.signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 240px;
+  color: #F9FAF8;
+  padding: 60px 120px;
+  margin: 60px auto;
+  border-radius: 8px;
+}
+
+.signup button {
+  border: 2px solid #F9FAF8;
+  flex-shrink: 0;
+  margin: 0;
+  text-align: end;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px;
 }
