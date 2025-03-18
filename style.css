@@ -21,7 +21,14 @@ html, body {
 } 
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   font-size: 24px;
+}
+
+.logo img {
+  border-radius: 50%;
 }
 
 .logo, h1, h2, button, .author {
@@ -40,6 +47,9 @@ ul {
   display: flex;
   gap: 24px;
 }
+
+a {text-decoration: none;}
+a:visited { text-decoration: none; color:#E5E7EB; }
 
 button, .signup {
   background-color: #3882F6;
@@ -70,13 +80,14 @@ button {
   flex-basis: 100%;
 }
 
-.placeholder {
-  background-color: grey;
+.hero-image {
   display: flex;
-  flex-basis: 100%;
-  padding: 48px;
   justify-content: center;
   align-items: center;
+}
+
+.hero-image img {
+  border-radius: 24px;
 }
 
 h2 {
@@ -117,6 +128,7 @@ h2 {
   height: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .quote {
